@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173", // your frontend
+  origin: ["http://localhost:5173","https://login-febe-fe.onrender.com"], // your frontend
   methods: ["GET", "POST"],
   credentials: true
 }));

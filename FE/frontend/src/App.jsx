@@ -12,8 +12,8 @@ const App = () => {
   async function handleSubmit() {
     try {
       const url = isLogin
-        ? "http://localhost:3000/login"
-        : "http://localhost:3000/signup";
+        ? "https://login-febe-3.onrender.com/login"
+        : "https://login-febe-3.onrender.com/signup";
 
       const res = await axios.post(url, { username: user, password: pass });
       setMessage(res.data.message);
